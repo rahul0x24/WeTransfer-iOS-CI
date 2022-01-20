@@ -17,25 +17,25 @@ public enum WeTransferPRLinter {
             reportXCResultsSummary(using: danger, summaryReporter: xcResultSummaryReporter, reportsPath: reportsPath, fileManager: fileManager)
         }
 
-        measure(taskName: "PR Description Validation") {
-            validatePRDescription(using: danger)
-        }
+//         measure(taskName: "PR Description Validation") {
+//             validatePRDescription(using: danger)
+//         }
 
-        measure(taskName: "Validating Work in Progress") {
-            validateWorkInProgress(using: danger)
-        }
+//         measure(taskName: "Validating Work in Progress") {
+//             validateWorkInProgress(using: danger)
+//         }
 
-        measure(taskName: "Validating Files") {
-            validateFiles(using: danger)
-        }
+//         measure(taskName: "Validating Files") {
+//             validateFiles(using: danger)
+//         }
 
-        measure(taskName: "Bitrise URL showing") {
-            showBitriseBuildURL(using: danger, environmentVariables: environmentVariables)
-        }
+//         measure(taskName: "Bitrise URL showing") {
+//             showBitriseBuildURL(using: danger, environmentVariables: environmentVariables)
+//         }
 
-        measure(taskName: "SwiftLint") {
-            swiftLint(using: danger, executor: swiftLintExecutor, configsFolderPath: swiftLintConfigsFolderPath, fileManager: fileManager)
-        }
+//         measure(taskName: "SwiftLint") {
+//             swiftLint(using: danger, executor: swiftLintExecutor, configsFolderPath: swiftLintConfigsFolderPath, fileManager: fileManager)
+//         }
     }
 
     private static func measure(taskName: String, task: () -> Void) {
